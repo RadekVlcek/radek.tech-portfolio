@@ -25,8 +25,13 @@ $(function(){
     { id: 13, per: 0 }     // Raspberry Pi
   ]
 
-  for(var i=0 ; i<percentage.length ; i++)
-    $('.gm' + percentage[i].id).html(percentage[i].per + '%');
+  for(var i=0 ; i<percentage.length ; i++){
+
+    if( percentage[i].per )
+    
+      $('.gm' + percentage[i].id).html(percentage[i].per + '%');
+
+  }
 
   // Goals fadeIn / fadeOut
   var $linksColor = $('a');

@@ -1,28 +1,48 @@
-var local = 'http://localhost/radek.tech/';
-var live = 'http://www.radek.tech/';
-
-if(window.location.href == local || window.location.href == live){
   $('#profile-img').hide();
   $('#profile-title').hide();
-}
-
-$('.goals-div ul').hide();
+  $('.goals-div ul').hide();
+  $('.goals-meter').hide();
 
 $(function(){
+
+  /*
+  * Loading data from percentage array
+  * to the spans with a class of .gm + its id
+  */
+  var percentage = [
+    { id: 1, per: 15 },     // React
+    { id: 2, per: 0 },      // Gulp
+    { id: 3, per: 5 },      // LESS
+    { id: 4, per: 3 },      // native PHP
+    { id: 5, per: 5 },      // Laravel
+    { id: 6, per: 0 },      // Node
+    { id: 7, per: 0 },     // PostgreSQL
+    { id: 8, per: 0 },     // Express.js
+    { id: 9, per: 0 },     // Android
+    { id: 10, per: 5 },     // npm
+    { id: 11, per: 0 },    // terminal
+    { id: 12, per: 0 },    // Kali
+    { id: 13, per: 0 }     // Raspberry Pi
+  ]
+
+  for(var i=0 ; i<percentage.length ; i++)
+    $('.gm' + percentage[i].id).html(percentage[i].per + '%');
+
+  // Goals fadeIn / fadeOut
   var $linksColor = $('a');
   $linksColor.addClass('exLinks');
 
   $('#profile-img').fadeIn(950);
   $('#profile-title').fadeIn(2400);
 
-  if(window.location.href == local + 'skills-and-work' || window.location.href == live + 'skills-and-work'){
-    var $goalsList    = $('.goals-list');
-    var $goalsButton  = $('.goals-button');
+  var $goalsList    = $('.goals-list');
+  var $goalsButton  = $('.goals-button');
 
-    $goalsButton.on('click', function(){
-      $(this).siblings().fadeToggle(350);
-    });
+  $goalsButton.on('click', function(){
+    $(this).siblings().fadeToggle(350);
+    $('.goals-meter').show();
+  });
 
-    $('.work-list li a').attr('target', '_blank');
-  }
+  $('.work-list li a').attr('target', '_blank');
+
 });

@@ -20,9 +20,9 @@ $(function(){
     { id: 8, per: 0 },     // Express.js
     { id: 9, per: 0 },     // Android
     { id: 10, per: 5 },     // npm
-    { id: 11, per: 100 },    // terminal
-    { id: 12, per: 100 },    // Kali
-    { id: 13, per: 100 }     // Raspberry Pi
+    { id: 11, per: 0 },    // terminal
+    { id: 12, per: 0 },    // Kali
+    { id: 13, per: 0 }     // Raspberry Pi
   ]
 
   for(var i=0 ; i<percentage.length ; i++){

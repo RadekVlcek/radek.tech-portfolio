@@ -11,7 +11,7 @@ $(function(){
   */
   var percentage = [
     { id: 1, per: 22 },     // React
-    { id: 2, per: 0 },      // Gulp
+    { id: 2, per: 100 },      // Gulp
     { id: 3, per: 5 },      // LESS
     { id: 4, per: 3 },      // native PHP
     { id: 5, per: 5 },      // Laravel
@@ -20,16 +20,24 @@ $(function(){
     { id: 8, per: 0 },     // Express.js
     { id: 9, per: 0 },     // Android
     { id: 10, per: 5 },     // npm
-    { id: 11, per: 0 },    // terminal
-    { id: 12, per: 0 },    // Kali
-    { id: 13, per: 0 }     // Raspberry Pi
+    { id: 11, per: 100 },    // terminal
+    { id: 12, per: 100 },    // Kali
+    { id: 13, per: 100 }     // Raspberry Pi
   ]
 
   for(var i=0 ; i<percentage.length ; i++){
 
-    if( percentage[i].per )
+    if( percentage[i].per ){
 
-      $('.gm' + percentage[i].id).html(percentage[i].per + '%');
+      if( percentage[i].per < 100 )
+
+        $('.gm' + percentage[i].id).html(percentage[i].per + '%');
+
+      else
+
+        $('.gm' + percentage[i].id).html('<div class="glyphicon glyphicon-ok"></div>');
+
+    }
 
   }
 

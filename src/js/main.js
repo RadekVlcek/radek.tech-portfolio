@@ -13,7 +13,7 @@ $(function(){
     { id: 1, per: 22 },     // React
     { id: 2, per: 100 },      // Gulp
     { id: 3, per: 100 },      // LESS
-    { id: 4, per: 3 },      // native PHP
+    { id: 4, per: 70 },      // native PHP
     { id: 5, per: 5 },      // Laravel
     { id: 6, per: 0 },      // Node
     { id: 7, per: 0 },     // PostgreSQL

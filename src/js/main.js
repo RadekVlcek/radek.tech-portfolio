@@ -10,7 +10,7 @@ $(function(){
   * to the spans with a class of .gm + its id
   */
   var percentage = [
-    { id: 1, per: 25 },     // React
+    { id: 1, per: 30 },     // React
     { id: 2, per: 100 },      // Gulp
     { id: 3, per: 100 },      // LESS
     { id: 4, per: 70 },      // native PHP

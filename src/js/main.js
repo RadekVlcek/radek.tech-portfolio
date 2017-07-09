@@ -10,7 +10,7 @@ $(function(){
   * to the spans with a class of .gm + its id
   */
   var percentage = [
-    { id: 1, per: 30 },     // React
+    { id: 1, per: 45 },     // React
     { id: 2, per: 100 },      // Gulp
     { id: 3, per: 100 },      // LESS
     { id: 4, per: 70 },      // native PHP
@@ -20,7 +20,7 @@ $(function(){
     { id: 8, per: 0 },     // Express.js
     { id: 9, per: 0 },     // Android
     { id: 10, per: 5 },     // npm
-    { id: 11, per: 0 },    // terminal
+    { id: 11, per: 5 },    // terminal
     { id: 12, per: 0 },    // Kali
     { id: 13, per: 0 }     // Raspberry Pi
   ]

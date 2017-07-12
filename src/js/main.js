@@ -43,6 +43,7 @@ $(function(){
 
   // Goals fadeIn / fadeOut
   var $linksColor = $('a');
+
   $linksColor.addClass('exLinks');
 
   $('#profile-img').fadeIn(950);
@@ -52,8 +53,11 @@ $(function(){
   var $goalsButton  = $('.goals-button');
 
   $goalsButton.on('click', function(){
+
     $(this).siblings().fadeToggle(350);
+
     $('.goals-meter').show();
+
   });
 
   $('.work-list li a').attr('target', '_blank');

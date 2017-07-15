@@ -12,10 +12,16 @@ body {
   margin-bottom: 124px;
 }
 
-a:focus, a:hover {
-  outline: none !important;
-  outline-offset: 0 !important;
-  text-decoration: none !important;
+a:focus {
+  color: #337ab7;
+  outline: none;
+  outline-offset: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #23527c;
+  text-decoration: none;
 }
 
 ul li {

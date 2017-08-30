@@ -1,7 +1,4 @@
-  $('#profile-img').hide();
-  $('#profile-title').hide();
-  $('.goals-div ul').hide();
-  $('.goals-meter').hide();
+$('.goals-div ul').hide();
 
 $(function(){
 

@@ -1,4 +1,4 @@
-$('.goals-div ul').hide();
+//$('.goals-div ul').hide();
 
 $(function(){
 
@@ -52,8 +52,6 @@ $(function(){
   $goalsButton.on('click', function(){
 
     $(this).siblings().fadeToggle(350);
-
-    $('.goals-meter').show();
 
   });
 

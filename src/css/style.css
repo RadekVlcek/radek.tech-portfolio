@@ -24,6 +24,10 @@ a:hover {
   text-decoration: none;
 }
 
+.init-hide {
+  display: none;
+}
+
 ul li {
   list-style-type: none;
 }

@@ -12,9 +12,9 @@ $(function(){
     { id: 3, per: 100 },      // LESS
     { id: 4, per: 70 },      // native PHP
     { id: 5, per: 5 },      // Laravel
-    { id: 6, per: 5 },      // Node
+    { id: 6, per: 20 },      // Node
     { id: 7, per: 0 },     // PostgreSQL
-    { id: 8, per: 0 },     // Express.js
+    { id: 8, per: 20 },     // Express.js
     { id: 9, per: 0 },     // Android
     { id: 10, per: 5 },     // npm
     { id: 11, per: 5 },    // terminal

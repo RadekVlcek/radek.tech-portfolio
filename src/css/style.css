@@ -298,3 +298,15 @@ ul li {
   height: 30px;
   background: linear-gradient(to right, #ffffff, #cccccc);
 }
+
+/* NEW VERSION COMING SOON... */
+.new-version {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  width: 40%;
+  margin: 50px auto;
+  margin-bottom: -15px;
+  background: transparent;
+  color: #337ab7;
+  border: 1px solid #337ab7;
+}
